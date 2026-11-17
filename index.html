@@ -6,7 +6,7 @@
   <title>강연례 | 33년 현장 경험의 AI 강사</title>
   <meta name="description" content="글로벌사이버대학교 특임교수 강연례. 33년 현장 경험으로 누구나 따라 할 수 있는 AI 활용 강의를 합니다.">
 
-  <!-- 링크 미리보기(카카오톡·문자) — Netlify 주소가 정해지면 아래 주소를 바꿉니다 -->
+  <!-- 링크 미리보기(카카오톡·문자) -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="강연례 | 33년 현장 경험의 AI 강사">
   <meta property="og:description" content="글로벌사이버대학교 특임교수 강연례. 누구나 따라 할 수 있는 AI 활용 강의.">
@@ -18,7 +18,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/main.js" defer></script>
 </head>
@@ -28,7 +28,7 @@
   <!-- 맨 위 메뉴 -->
   <header class="site-header">
     <div class="container nav">
-      <a href="#top" class="logo">강연례<span>AI LECTURER</span></a>
+      <a href="#top" class="logo"><span class="logo-mark" aria-hidden="true">강</span>강연례</a>
       <button class="menu-btn" aria-label="메뉴 열기" aria-expanded="false" aria-controls="menu">
         <span></span><span></span><span></span>
       </button>
@@ -43,19 +43,28 @@
   </header>
 
   <main id="main">
-    <!-- 첫 화면(히어로) -->
+    <!-- 첫 화면: 초대장 카드 -->
     <section class="hero" id="top">
-      <div class="corner corner-tl" aria-hidden="true"></div>
-      <div class="corner corner-br" aria-hidden="true"></div>
-      <div class="container hero-inner">
-        <div class="hero-photo reveal">
-          <img src="images/profile.jpg" alt="강연례 강사 프로필 사진" width="800" height="1000">
-        </div>
-        <div class="hero-text reveal">
-          <p class="eyebrow">글로벌사이버대학교 특임교수</p>
+      <div class="container">
+        <div class="invite reveal">
+          <div class="hero-photo">
+            <img src="images/profile.jpg" alt="강연례 강사 프로필 사진" width="800" height="800">
+          </div>
+          <p class="org">글로벌사이버대학교</p>
+          <p class="org-sub">(특임교수)</p>
+
+          <span class="flourish" aria-hidden="true"></span>
+          <p class="script-title" lang="en">Kang Yeonrye</p>
           <h1>강연례</h1>
-          <div class="rule"><span>AI LECTURER</span></div>
+          <span class="flourish" aria-hidden="true"></span>
+
+          <div class="band">
+            <strong>33<sup>년</sup></strong>
+            <span class="band-text">현장 경험<br>차별화된 AI 강사</span>
+          </div>
+
           <p class="tagline"><span class="typing" data-text="33년 현장 경험으로 차별화된 AI 강사">33년 현장 경험으로 차별화된 AI 강사</span></p>
+
           <div class="btns">
             <a class="btn btn-primary" href="tel:01012345678">📞 전화 걸기</a>
             <a class="btn btn-outline" href="https://blog.naver.com/kang96120100" target="_blank" rel="noopener noreferrer">블로그</a>
@@ -69,7 +78,7 @@
     <!-- 소개 -->
     <section class="section" id="about">
       <div class="container narrow">
-        <p class="label reveal">ABOUT</p>
+        <p class="label reveal">About</p>
         <h2 class="reveal">어렵지 않은 AI,<br>현장의 언어로 전합니다</h2>
         <p class="lead reveal">
           33년 동안 현장에서 사람을 가르치고 일을 해 온 경험으로, AI를 처음 만나는 분도
@@ -80,14 +89,14 @@
     </section>
 
     <!-- 경력 -->
-    <section class="section section-tint" id="career">
+    <section class="section section-alt" id="career">
       <div class="container">
-        <p class="label reveal">CAREER</p>
+        <p class="label reveal">Career</p>
         <h2 class="reveal">숫자로 보는 경력</h2>
-        <div class="stats">
-          <div class="stat reveal"><strong><span class="count" data-target="33">33</span>년</strong><p>현장 경험</p></div>
-          <div class="stat reveal"><strong><span class="count" data-target="1200">1200</span>+</strong><p>강의 횟수 (샘플)</p></div>
-          <div class="stat reveal"><strong><span class="count" data-target="30000">30000</span>+</strong><p>누적 수강생 (샘플)</p></div>
+        <div class="stats reveal">
+          <div class="stat"><strong><span class="count" data-target="33">33</span><small>년</small></strong><p>현장 경험</p></div>
+          <div class="stat"><strong><span class="count" data-target="1200">1200</span><small>+</small></strong><p>강의 횟수 (샘플)</p></div>
+          <div class="stat"><strong><span class="count" data-target="30000">30000</span><small>+</small></strong><p>누적 수강생 (샘플)</p></div>
         </div>
         <ul class="timeline">
           <li class="reveal"><span>현재</span>글로벌사이버대학교 특임교수</li>
@@ -100,7 +109,7 @@
     <!-- 강의 분야 -->
     <section class="section" id="lectures">
       <div class="container">
-        <p class="label reveal">LECTURES</p>
+        <p class="label reveal">Lectures</p>
         <h2 class="reveal">이런 강의를 합니다</h2>
         <div class="cards">
           <article class="card reveal">
@@ -128,9 +137,9 @@
     </section>
 
     <!-- 활동 사진 -->
-    <section class="section section-tint" id="gallery">
+    <section class="section section-alt" id="gallery">
       <div class="container">
-        <p class="label reveal">GALLERY</p>
+        <p class="label reveal">Gallery</p>
         <h2 class="reveal">활동 사진</h2>
         <div class="gallery">
           <figure class="reveal"><img src="images/activity-1.jpg" alt="강의 현장 사진 1 (샘플)" width="1200" height="800" loading="lazy"><figcaption>기업 AI 실무 특강</figcaption></figure>
@@ -143,7 +152,7 @@
     <!-- 문의 -->
     <section class="section" id="contact">
       <div class="container">
-        <p class="label reveal">CONTACT</p>
+        <p class="label reveal">Contact</p>
         <h2 class="reveal">강의 문의</h2>
         <p class="center-note reveal">편하게 연락 주세요. 함께 만들 강의를 기다리겠습니다.</p>
         <div class="info reveal">
@@ -175,6 +184,7 @@
 
   <footer class="site-footer">
     <div class="container">
+      <p class="footer-script" lang="en">Thank you</p>
       <p class="footer-name">강연례 · AI 강사</p>
       <p>전화 <a href="tel:01012345678">010-1234-5678</a> · 서울특별시 종로구 샘플로 123, 4층</p>
       <p class="copy">© <span id="year">2026</span> 강연례. All rights reserved.</p>
