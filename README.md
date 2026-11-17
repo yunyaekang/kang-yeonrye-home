@@ -3,6 +3,10 @@
 33년 현장 경험의 AI 강사 강연례를 소개하는 한 페이지짜리 웹사이트입니다.
 HTML·CSS·JavaScript만 사용하며, 설치나 빌드가 필요 없습니다.
 
+- 사이트: https://kang-yeonrye-home.netlify.app
+- 저장소: https://github.com/yunyaekang/kang-yeonrye-home
+- GitHub `main`에 올리면 Netlify가 자동으로 다시 배포합니다.
+
 ## 파일 구조
 
 | 파일 | 하는 일 |
